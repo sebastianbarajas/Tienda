@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 768px)">
+    <title>Tienda</title>
+</head>
+<body>
+    <!--Pop up Art 1 detalle-->
+        <div class="container justify-content-center popup display-none" id="popArtUno">
+            <div class="container-desk-4 containe-6 d-block justify-content-center">
+                <p class="fs-4 text-center">Modeo: Iphone 11</p>
+                <p class="fs-4 text-center">Marca: Apple</p>
+                <p class="fs-4 text-center">Capacidad: 250gb</p>
+                <p class="fs-4 text-center">Dimencones: 10cm x 50mm</p>
+                <div class="container justify-content-center">
+                    <button class="btn-close-popup" id="close-popup" onclick="cerrarModal()">cerrar</button>
+                </div>
+                
+            </div>
+        </div>
+    <!--Pop up Art 1 detalle-->
+     <!--Pop up Art 2 detalle-->
+     <div class="container justify-content-center popup display-none" id="popArtDos">
+        <div class="container-desk-4 containe-6 d-block justify-content-center">
+            <p class="fs-4 text-center">Modeo: Iphone 13</p>
+            <p class="fs-4 text-center">Marca: Apple</p>
+            <p class="fs-4 text-center">Capacidad: 250gb</p>
+            <p class="fs-4 text-center">Dimencones: 10cm x 50mm</p>
+            <div class="container justify-content-center">
+                <button class="btn-close-popup" id="close-popup" onclick="cerrarModalDos()">cerrar</button>
+            </div>
+            
+        </div>
+    </div>
+<!--Pop up Art 2 detalle-->
+ <!--Pop up Art 3 detalle-->
+ <div class="container justify-content-center popup display-none" id="popArtTres">
+    <div class="container-desk-4 containe-6 d-block justify-content-center">
+        <p class="fs-4 text-center">Modeo: Iphone 12</p>
+        <p class="fs-4 text-center">Marca: Apple</p>
+        <p class="fs-4 text-center">Capacidad: 250gb</p>
+        <p class="fs-4 text-center">Dimencones: 10cm x 50mm</p>
+        <div class="container justify-content-center">
+            <button class="btn-close-popup" id="close-popup" onclick="cerrarModalTres()">cerrar</button>
+        </div>
+        
+    </div>
+</div>
+<!--Pop up Art 3 detalle-->
+    <header>
+        <div class="container">
+            <div class="container-4 container-desk-8">
+                <div class="container-6 fs-3 justify-content-center px-1 order-desk-2">
+                    <a href="#" class="fa-solid fa-bars fc-white display-none-desk"></a>
+                    <ul class="d-flex-desk justify-content-start align-content-center display-none">
+                        <li class="pr-1"><a href="#" class="fs-4 fc-white" >Productos</a></li>
+                        <li class="pr-1"><a href="#" class="fs-4 fc-white" >Nosotros</a></li>
+                        <li class="pr-1"><a href="#" class="fs-4 fc-white" >Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="container-6 fs-3 align-content-center order-desk-1 pl-desk-1 py-desk-1">
+                    <img src="img/macropay.png"  class="img-fluid img-logo" alt="Logo">
+                </div>
+            </div>
+            <div class="container-4 display-none-desk"></div>
+            <div class="container-4 container-desk-4">
+                <div class="container-6 justify-content-desk-end justify-content-center">
+                    <a href="#" class="login-btn">Login</a>
+                </div>
+                <div class="container-6 fs-3 justify-content-center px-1 align-content-center">
+                    <a href="#" class="fa-solid fa-cart-shopping fc-white"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="container-10 justify-content-center">
+                <input type="text" placeholder="Buscar producto" class="search-bar">
+            </div>
+            <div class="container-2 justify-content-center">
+                <button class="fa-solid fa-magnifying-glass fc-white search-bar-btn"></button>
+            </div>
+        </div>
+        <div class="container text-center p-1 justify-content-center" id="container-productos">
+            <div class="container justify-content-center">
+                <p class="fs-3">Los mejores equipos solo aquí</p>
+            </div>
+            
+            <!--contenedor Producto-->
+            <div class="container container-desk-4 justify-content-center">
+                <div class="container-producto">
+                    <div class="container justify-content-center">
+                        <a href="#" onclick="abrirModalArtUno()"><img src="img/apple-iphone-11.png" alt="iphone 11" class="img-fluid"></a>
+                    </div>
+                    <div class="container d-block">
+                        <p class="fs-3 pb-1">$10,000</p>
+                        <p class="fs-4 pb-1">iphone 11</p>
+                        <p class="fs-4 pb-1">Apple</p>
+                    </div>
+                    <div class="container">
+                        <div class="container-6 justify-content-end">
+                            <input type="number" placeholder="0" class="input-cant-product">
+                        </div>
+                        <div class="container-6 justify-content-start">
+                            <button class="btn-agregar">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/contenedor Producto-->
+            <!--contenedor Producto-->
+            <div class="container container-desk-4 justify-content-center">
+                <div class="container-producto">
+                    <div class="container justify-content-center">
+                        <a href="#" onclick="abrirModalArtDos()"><img src="img/apple-iphone-11.png" alt="iphone 13" class="img-fluid"></a>
+                    </div>
+                    <div class="container d-block">
+                        <p class="fs-3 pb-1">$20,000</p>
+                        <p class="fs-4 pb-1">iphone 13</p>
+                        <p class="fs-4 pb-1">Apple</p>
+                    </div>
+                    <div class="container">
+                        <div class="container-6 justify-content-end">
+                            <input type="number" placeholder="0" class="input-cant-product">
+                        </div>
+                        <div class="container-6 justify-content-start">
+                            <button class="btn-agregar">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/contenedor Producto-->
+            <!--contenedor Producto-->
+            <div class="container container-desk-4 justify-content-center">
+                <div class="container-producto">
+                    <div class="container justify-content-center">
+                        <a href="#" onclick="abrirModalArtTres()"><img src="img/apple-iphone-11.png" alt="iphone 12" class="img-fluid"></a>
+                    </div>
+                    <div class="container d-block">
+                        <p class="fs-3 pb-1">$15,000</p>
+                        <p class="fs-4 pb-1">iphone 12</p>
+                        <p class="fs-4 pb-1">Apple</p>
+                    </div>
+                    <div class="container">
+                        <div class="container-6 justify-content-end">
+                            <input type="number" placeholder="0" class="input-cant-product">
+                        </div>
+                        <div class="container-6 justify-content-start">
+                            <button class="btn-agregar">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/contenedor Producto-->
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="container container-desk-4 align-content-center justify-content-center order-desk-1">
+                <a href="https://www.facebook.com/" class="mx-auto mt-2"><i class="fa-brands fa-facebook-square fs-1 fc-white"></i></a>
+                <a href="https://www.instagram.com/" class="mx-auto mt-2"><i class="fa-brands fa-instagram-square fs-1 fc-white"></i></a>
+                <a href="https://www.youtube.com/" class="mx-auto mt-2"> <i class="fa-brands fa-youtube fs-1 fc-white"></i></a>
+            </div>
+            <div class="container container-desk-4 align-content-center justify-content-center my-2 order-desk-3 px-1">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29804.729477882338!2d-89.64594229130579!3d20.968926479630948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f567163acb6dea9%3A0x3712fd883337fd5e!2zQ2VudHJvLCBNw6lyaWRhLCBZdWMu!5e0!3m2!1ses!2smx!4v1657901317548!5m2!1ses!2smx" width="auto" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="container container-desk-4 align-content-center justify-content-center mb-2 order-desk-2">
+                <p class="fs-4 fc-white text-center mt-2" >Calle 19 #4543 entre 125 y 890<br>
+                    Mérida Yucatán
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="stock.js"></script>
+    <script src="https://kit.fontawesome.com/2adf8c61b9.js" crossorigin="anonymous"></script>
+</body>
+</html>

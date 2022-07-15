@@ -1,0 +1,73 @@
+.container{
+    width: 100%;
+}
+.container-desk-1{
+    width: 8.3%;
+}
+.container-desk-2{
+    width: 16.6%;
+}
+.container-desk-3{
+    width: 24.9%;
+}
+.container-desk-4{
+    width: 33.2%;
+}
+.container-desk-5{
+    width: 41.5%;
+}
+.container-desk-6{
+    width: 50%;
+}
+.container-desk-7{
+    width: 58.3%;
+}
+.container-desk-8{
+    width: 66.6%;
+}
+.container-desk-9{
+    width: 74.9%;
+}
+.container-desk-10{
+    width: 83.2%;
+}
+.container-desk-11{
+    width: 91.5%;
+}
+
+.justify-content-desk-end{
+    justify-content:end;
+}
+
+.order-desk-1{
+    order: 1;
+}
+
+.order-desk-2{
+    order: 2;
+}
+.order-desk-3{
+    order: 3;
+}
+.d-flex-desk{
+    display: flex;
+}
+
+.display-none-desk{
+display: none !important;
+}
+.display-block-desk{
+    display: block;
+}
+
+.pl-desk-1{
+    padding-left: 1rem;
+}
+
+.py-desk-1{
+    padding: 0 1rem 0 1rem;
+}
+
+.img-logo{
+    width: 50%;
+}
